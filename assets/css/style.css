@@ -760,13 +760,13 @@ section {
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #0563bb;
 }
 .services .iconbox-blue:hover .icon i {
-  color: #62bbff;
+  color: #0084ff;
 }
 .services .iconbox-blue:hover .icon path {
-  fill: #62bbff;
+  fill: #0084ff;
 }
 .services .iconbox-orange i {
   color: #ffa76e;
