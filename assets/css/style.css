@@ -63,7 +63,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #000000;
 }
 
 #preloader:before {
@@ -72,8 +72,8 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #0563bb;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -122,7 +122,7 @@ h6 {
 @media (max-width: 992px) {
   #header {
     width: 300px;
-    background: #fff;
+    background: #000000;
     border-right: 1px solid #e6e9ec;
     left: -300px;
   }
@@ -396,7 +396,7 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: #000000;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
 }
 .services .icon-box .icon {
@@ -438,7 +438,7 @@ section {
   margin-bottom: 0;
 }
 .services .icon-box:hover {
-  border-color: #fff;
+  border-color: #ffbb00;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 .services .iconbox-blue i {
@@ -456,7 +456,7 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #000000;
 }
 .contact .info i {
   font-size: 20px;
@@ -496,14 +496,14 @@ section {
 }
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #000000;
 }
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: #000000;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -514,7 +514,7 @@ section {
 }
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: #000000;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -522,7 +522,7 @@ section {
 }
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #000000;
   text-align: center;
   padding: 15px;
 }
@@ -608,7 +608,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
+  background: #ffbb00;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
