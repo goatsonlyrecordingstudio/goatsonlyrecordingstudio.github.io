@@ -162,7 +162,7 @@ h6 {
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  background: #ffc400;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -185,26 +185,26 @@ h6 {
   .nav-menu a span,
   .nav-menu a:focus span {
     display: none;
-    color: #fff;
+    color: #000000;
   }
 }
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
-  color: #fff;
-  background: #0563bb;
+  color: #000000;
+  background: #fdd244;
 }
 .nav-menu a:hover span,
 .nav-menu .active span,
 .nav-menu .active:focus span,
 .nav-menu li:hover > a span {
-  color: #fff;
+  color: #000000;
 }
 .nav-menu a:hover,
 .nav-menu li:hover > a {
   width: 100%;
-  color: #fff;
+  color: #000000;
 }
 .nav-menu a:hover span,
 .nav-menu li:hover > a span {
