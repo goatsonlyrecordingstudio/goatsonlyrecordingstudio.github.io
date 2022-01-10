@@ -241,7 +241,7 @@ h6 {
   left: 0;
 }
 .mobile-nav-active .mobile-nav-toggle {
-  color: #fff;
+  color: #000000;
   background-color: #ffc400;
 }
 
@@ -320,6 +320,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
+  background-color: #000000;
   padding: 60px 0;
   overflow: hidden;
 }
