@@ -241,7 +241,7 @@ h6 {
 }
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
-  background-color: #0563bb;
+  background-color: #ffc400;
 }
 
 /*--------------------------------------------------------------
@@ -582,7 +582,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
+  background: #000000;
   color: #45505b;
   font-size: 14px;
   text-align: center;
