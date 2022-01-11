@@ -651,12 +651,17 @@ section {
   transition: 0.3s;
 }
 
-#merchandise .button {
-  color: #feca40;
+#merchandise button {
+  background: #feca40;
+  border: 0;
+  padding: 10px 35px;
+  color: #000000;
+  transition: 0.4s;
+  border-radius: 50px;
 }
 
-#merchandise .button:hover {
-  color: #ffda74;
+#merchandise button:hover {
+  background: #ffda74;
 }
 
 #merchandise img {
