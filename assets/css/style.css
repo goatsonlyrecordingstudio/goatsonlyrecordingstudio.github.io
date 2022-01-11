@@ -75,7 +75,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #0563bb;
+  border: 6px solid #feca40;
   border-top-color: #000000;
   border-bottom-color: #000000;
   border-radius: 50%;
@@ -127,7 +127,7 @@ h6 {
   #header {
     width: 300px;
     background: #000000;
-    border-right: 1px solid #ffc400;
+    border-right: 5px solid #feca40;
     left: -300px;
   }
 }
@@ -388,7 +388,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #ffc400;
+  color: #feca40;
   line-height: 0;
 }
 .about .content p:last-child {
