@@ -1,4 +1,4 @@
-/* feca40, fcce50 */
+/* feca40, fcce50, ffda74 */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -7,12 +7,12 @@ body {
 }
 
 a {
-  color: #0563bb;
+  color: #feca40;
   text-decoration: none;
 }
 
 a:hover {
-  color: #067ded;
+  color: #ffda74;
   text-decoration: none;
 }
 
@@ -166,7 +166,7 @@ h6 {
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #ffc400;
+  background: #feca40;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -179,7 +179,7 @@ h6 {
 .nav-menu a span,
 .nav-menu a:focus span {
   padding: 0 5px 0 7px;
-  color: #45505b;
+  color: #000000;
 }
 @media (min-width: 992px) {
   .nav-menu a,
@@ -197,7 +197,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
   color: #000000;
-  background: #fdd244;
+  background: #ffda74;
 }
 .nav-menu a:hover span,
 .nav-menu .active span,
@@ -234,7 +234,7 @@ h6 {
   padding: 5px;
 }
 .mobile-nav-toggle i {
-  color: #45505b;
+  color: #000000;
 }
 
 .mobile-nav-active {
@@ -245,7 +245,7 @@ h6 {
 }
 .mobile-nav-active .mobile-nav-toggle {
   color: #000000;
-  background-color: #ffc400;
+  background-color: #feca40;
 }
 
 /*--------------------------------------------------------------
@@ -302,7 +302,7 @@ h6 {
   transition: 0.3s;
 }
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: #ffda74;
 }
 @media (max-width: 992px) {
   #hero {
@@ -444,7 +444,7 @@ section {
   margin-bottom: 0;
 }
 .services .icon-box:hover {
-  border-color: #ffbb00;
+  border-color: #ffda74;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 .services .iconbox-blue i {
@@ -466,11 +466,11 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #0563bb;
+  color: #000000;
   float: left;
   width: 44px;
   height: 44px;
-  background: #eef7ff;
+  background: #feca40;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -482,13 +482,13 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: #fff;
 }
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #728394;
+  color: #ffffff;
 }
 .contact .info .email,
 .contact .info .phone {
@@ -497,8 +497,8 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #0563bb;
-  color: #fff;
+  background: #ffda74;
+  color: #000000;
 }
 .contact .php-email-form {
   width: 100%;
@@ -557,15 +557,15 @@ section {
   padding: 10px 12px;
 }
 .contact .php-email-form button[type="submit"] {
-  background: #0563bb;
+  background: #feca40;
   border: 0;
   padding: 10px 35px;
-  color: #fff;
+  color: #000000;
   transition: 0.4s;
   border-radius: 50px;
 }
 .contact .php-email-form button[type="submit"]:hover {
-  background: #0678e3;
+  background: #ffda74;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -615,7 +615,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #ffbb00;
+  background: #feca40;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -627,7 +627,7 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #0678e3;
+  background: #ffda74;
   color: #fff;
   text-decoration: none;
 }
