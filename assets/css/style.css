@@ -281,7 +281,7 @@ h6 {
   color: #fff;
 }
 #hero p {
-  color: #45505b;
+  color: #fff;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -357,7 +357,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #0563bb;
+  background: #feca40;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -402,7 +402,7 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #40e8fe;
+  background: #000000;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
 }
 .services .icon-box .icon {
@@ -590,7 +590,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #000000;
-  color: #45505b;
+  color: #fff;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -609,6 +609,7 @@ section {
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
+  color: #fff;
 }
 #footer .social-links {
   margin: 0 0 40px 0;
