@@ -651,11 +651,11 @@ section {
   transition: 0.3s;
 }
 
-#merchandize .button {
+#merchandise .button {
   color: #feca40;
 }
 
-#merchandize .button:hover {
+#merchandise .button:hover {
   color: #ffda74;
 }
 
