@@ -1,3 +1,5 @@
+/* feca40, fcce50 */
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -33,7 +35,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffc400;
+  background: #feca40;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -45,7 +47,7 @@ h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #ffd13a;
+  background: #fcce50;
   color: #fff;
 }
 .back-to-top.active {
