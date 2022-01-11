@@ -658,3 +658,7 @@ section {
 #merchandize .button:hover {
   color: #ffda74;
 }
+
+#merchandise img {
+  border: 5px solid #555;
+}
