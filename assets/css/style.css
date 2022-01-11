@@ -618,7 +618,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #feca40;
-  color: #fff;
+  color: #000000;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -630,7 +630,7 @@ section {
 }
 #footer .social-links a:hover {
   background: #ffda74;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 #footer .copyright {
