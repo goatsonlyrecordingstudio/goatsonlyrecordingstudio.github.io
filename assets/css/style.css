@@ -639,3 +639,22 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+/*--------------------------------------------------------------
+# Merch
+--------------------------------------------------------------*/
+
+#merchandise a {
+  display: inline;
+  color: #000000;
+  line-height: 1;
+  transition: 0.3s;
+}
+
+#merchandize .button {
+  color: #feca40;
+}
+
+#merchandize .button:hover {
+  color: #ffda74;
+}
