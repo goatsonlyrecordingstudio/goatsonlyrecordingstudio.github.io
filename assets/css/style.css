@@ -667,3 +667,7 @@ section {
 #merchandise img {
   border: 5px solid #555;
 }
+
+.services strong {
+  color: #feca40;
+}
