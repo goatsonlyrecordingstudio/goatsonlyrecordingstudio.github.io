@@ -670,4 +670,9 @@ section {
 
 .services strong {
   color: #feca40;
+  font-size: 16px;
+}
+
+.services img {
+  height: 100px;
 }
