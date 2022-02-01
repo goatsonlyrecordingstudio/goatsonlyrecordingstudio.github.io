@@ -468,6 +468,7 @@ section {
 .contact .info {
   width: 100%;
   background: #000000;
+  padding-top: 35px;
 }
 .contact .info i {
   font-size: 20px;
