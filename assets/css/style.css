@@ -672,6 +672,12 @@ section {
 
 #merchandise img {
   border: 5px solid #555;
+  transition: ease-in 0.2s;
+}
+
+#merchandise img:hover {
+  border: 5px solid #feca40;
+  transition: ease-in 0.2s;
 }
 
 .services strong {
