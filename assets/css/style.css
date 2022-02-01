@@ -677,3 +677,13 @@ section {
   color: #feca40;
   font-size: 16px;
 }
+
+.sellfy-button {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#merch-rows {
+    text-align: center;
+    justify-content:center;
+}
