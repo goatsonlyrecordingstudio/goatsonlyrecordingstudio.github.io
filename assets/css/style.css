@@ -162,15 +162,16 @@ h6 {
   align-items: center;
   color: #000000;
   padding: 10px 18px;
+  font-family: Raleway, sans-serif;
   margin-bottom: 8px;
   transition: 0.3s;
-  font-size: 15px;
-  border-radius: 50px;
+  font-size: 17px;
+  border-radius: 10px;
   background: #feca40;
   height: 56px;
   width: 100%;
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .nav-menu a i,
 .nav-menu a:focus i {
@@ -213,6 +214,8 @@ h6 {
 .nav-menu a:hover span,
 .nav-menu li:hover > a span {
   display: block;
+  padding-left: 15px;
+  padding-right: 8px;
 }
 
 /**
@@ -496,14 +499,16 @@ section {
   font-size: 14px;
   color: #ffffff;
 }
+.contact .info .instagram,
 .contact .info .email,
 .contact .info .phone {
   margin-top: 40px;
 }
+.contact .info .instagram:hover i,
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #ffda74;
+  background: #eed48f;
   color: #000000;
 }
 .contact .php-email-form {
