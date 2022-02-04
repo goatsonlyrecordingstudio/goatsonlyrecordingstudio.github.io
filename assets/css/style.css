@@ -673,6 +673,7 @@ section {
 
 #merchandise button:hover {
   background: #ffda74;
+  box-shadow: #feca40;
 }
 
 #merchandise img {
