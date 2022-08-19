@@ -410,6 +410,11 @@ section {
   border: 2px solid #555;
   border-radius: 10px;
 }
+.services .icon-box .cost {
+  padding-left: 75px;
+  padding-right: 75px;
+
+}
 
 .services .icon-box .icon {
   margin: 0 auto;
