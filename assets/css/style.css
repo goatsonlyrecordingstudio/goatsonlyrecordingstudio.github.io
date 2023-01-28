@@ -259,7 +259,7 @@ h6 {
   height: 100vh;
   /* background: url("") top right no-repeat; */
   background-size: cover;
-  background-color: #a52121;
+  background-color: #000000;
   position: relative;
 }
 @media (min-width: 992px) {
