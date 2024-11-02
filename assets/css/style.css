@@ -734,6 +734,7 @@ section {
   object-fit: cover; /* Fills the container without stretching */
   border-radius: 5px; /* Optional for rounded corners */
 }
+
 @media (max-width: 992px) {
   #pic-row {
     flex-direction: column;
