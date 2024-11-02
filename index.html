@@ -613,22 +613,26 @@
     
         images.forEach((img) => {
           img.addEventListener("click", (e) => {
+            console.log("Image clicked:", e.target.src); // Log to see if click works
             lightboxImage.src = e.target.src;
             lightboxOverlay.style.display = "flex";
           });
         });
     
         lightboxClose.addEventListener("click", () => {
+          console.log("Close button clicked"); // Log for close button click
           lightboxOverlay.style.display = "none";
         });
     
         lightboxOverlay.addEventListener("click", (e) => {
           if (e.target === lightboxOverlay) {
+            console.log("Overlay clicked"); // Log for overlay click
             lightboxOverlay.style.display = "none";
           }
         });
       });
     </script>
+    
     <!-- main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
