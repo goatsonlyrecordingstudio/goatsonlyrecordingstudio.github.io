@@ -733,7 +733,7 @@ section {
   height: 225px;
   object-fit: cover;
   border-radius: 5px; 
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 @media (max-width: 992px) {
