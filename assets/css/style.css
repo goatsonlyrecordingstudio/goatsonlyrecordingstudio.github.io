@@ -375,6 +375,53 @@ section {
   font-weight: 700;
   font-size: 26px;
   color: #fff;
+  margin-bottom: 20px;
+}
+.about .content p {
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+.about .about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.about .about-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+.about .about-meta li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.about .about-meta strong {
+  margin-right: 8px;
+}
+.about .about-meta i {
+  font-size: 16px;
+  margin-right: 6px;
+  color: #feca40;
+  line-height: 0;
+}
+.about .about-cta {
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+.about .about-cta a {
+  display: inline-block;
+  padding: 11px 26px;
+  border: 1px solid #feca40;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.about .about-cta a:hover {
+  background: #feca40;
+  color: #000;
 }
 .about .content ul {
   list-style: none;
@@ -396,6 +443,53 @@ section {
 }
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Bandcamp card
+--------------------------------------------------------------*/
+.bandcamp-card {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #111;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.bandcamp-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.bandcamp-card .bandcamp-card-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 14px 16px;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(4px);
+}
+.bandcamp-card h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.bandcamp-card p {
+  margin: 2px 0 0 0;
+  font-size: 13px;
+  color: #bbb;
+}
+.bandcamp-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.6);
+}
+.bandcamp-card:hover p {
+  color: #feca40;
 }
 
 /*--------------------------------------------------------------
@@ -734,6 +828,15 @@ section {
   object-fit: cover;
   border-radius: 5px; 
   /* cursor: pointer; */
+}
+
+#pic-row .gallery-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (max-width: 992px) {
