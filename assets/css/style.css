@@ -1,5 +1,10 @@
 /* feca40, fcce50, ffda74 */
 
+:root {
+  /* shared corner radius for every image on the page */
+  --img-radius: 6px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -389,7 +394,7 @@ section {
 .about .about-img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-radius: var(--img-radius);
   cursor: pointer;
 }
 .about .about-meta {
@@ -459,7 +464,7 @@ section {
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
-  border-radius: 8px;
+  border-radius: var(--img-radius);
   overflow: hidden;
   background: #111;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -830,13 +835,6 @@ section {
   overflow: hidden;
 }
 
-.image-item {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 5px; 
-  /* cursor: pointer; */
-}
 
 #pic-row .gallery-img {
   width: 100%;
@@ -844,12 +842,22 @@ section {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
-  border-radius: 5px;
+  border-radius: var(--img-radius);
   cursor: pointer;
 }
-/* portrait shots whose subject sits low in frame */
+/* These are tall phone shots cropped square, so each one needs its subject
+   pulled into frame. Clicking opens the uncropped original. */
+#pic-row .gallery-img.focus-top {
+  object-position: center 15%;
+}
+#pic-row .gallery-img.focus-upper {
+  object-position: center 35%;
+}
 #pic-row .gallery-img.focus-lower {
-  object-position: center 68%;
+  object-position: center 65%;
+}
+#pic-row .gallery-img.focus-bottom {
+  object-position: center 85%;
 }
 
 @media (max-width: 992px) {
@@ -880,6 +888,7 @@ section {
 #lightbox-overlay img {
   max-width: 90%;
   max-height: 90%;
+  border-radius: var(--img-radius);
 }
 
 #lightbox-close {
