@@ -84,10 +84,17 @@
   /**
    * Mobile nav toggle
    */
-  on("click", ".mobile-nav-toggle", function (e) {
+  const toggleMobileNav = function () {
     select("body").classList.toggle("mobile-nav-active");
     this.classList.toggle("bi-list");
     this.classList.toggle("bi-x");
+  };
+  on("click", ".mobile-nav-toggle", toggleMobileNav);
+  on("keydown", ".mobile-nav-toggle", function (e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleMobileNav.call(this);
+    }
   });
 
   /**
@@ -147,23 +154,6 @@
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 2000,
-    });
-  }
-
-  /**
-   * Services animation
-   */
-  let skilsContent = select(".skills-content");
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: "80%",
-      handler: function (direction) {
-        let progress = select(".progress .progress-bar", true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute("aria-valuenow") + "%";
-        });
-      },
     });
   }
 
