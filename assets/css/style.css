@@ -3,6 +3,10 @@
 :root {
   /* shared corner radius for every image on the page */
   --img-radius: 6px;
+  /* vertical rhythm: gap from a heading to the content under it,
+     and the larger gap between one block of content and the next heading */
+  --space-title: 50px;
+  --space-section: 120px;
 }
 
 body {
@@ -337,7 +341,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   background-color: #000000;
-  padding: 60px 0;
+  padding: calc(var(--space-section) / 2) 0;
   overflow: hidden;
 }
 
@@ -376,6 +380,10 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
+}
+/* a second heading inside a section needs the same gap as a section break */
+.section-title.section-break {
+  padding-top: var(--space-section);
 }
 
 /*--------------------------------------------------------------
@@ -422,7 +430,7 @@ section {
 }
 .about .about-cta a {
   display: inline-block;
-  padding: 11px 26px;
+  padding: 11px 46px;
   border: 1px solid #feca40;
   border-radius: 4px;
   font-weight: 600;
@@ -432,7 +440,17 @@ section {
 .about .about-cta a:hover {
   background: #feca40;
   color: #000;
-}.about .content p:last-child {
+}
+@media (max-width: 991.98px) {
+  /* stacked: let the CTA span the column */
+  .about .about-cta a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.about .content p:last-child {
   margin-bottom: 0;
 }
 
@@ -448,7 +466,6 @@ section {
   border-radius: var(--img-radius);
   overflow: hidden;
   background: #111;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 .bandcamp-card img {
   display: block;
@@ -475,77 +492,66 @@ section {
   font-size: 13px;
   color: #bbb;
 }
-.bandcamp-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.6);
-}
-.bandcamp-card:hover p {
-  color: #feca40;
-}
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  width: 100%;
-  text-align: center;
-  padding: 50px 20px 70px 20px;
-  transition: all ease-in-out 0.3s;
-  background: #000000;
-  border: 2px solid #555;
-  border-radius: 10px;
-}
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: ease-in-out 0.3s;
-  position: relative;
-}
-.services .icon-box .icon i {
-  font-size: 36px;
-  transition: 0.5s;
-  position: relative;
-  color:#feca40;
-}
-.services .icon-box .icon svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.services .icon-box .icon svg path {
-  transition: 0.5s;
-  fill: #feca40;
-}
-.services .icon-box h4 {
-  font-weight: 600;
-  margin: 10px 0 39px 0;
-  font-size: 22px;
-}.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 24px;
-}
-.services .icon-box p:last-child {
-  margin-bottom: 0;
-}
-/* .services .icon-box:hover {
-  border-color: #feca40;
-}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact {
   grid-row: auto;
+  /* the label hangs below the QR, so the left column's centre sits lower than
+     the QR's own centre. Offset the details by half that block so the two
+     groups read as centred against each other. */
+  --qr-label-block: 42px;
+}
+
+.contact .booking-col {
+  text-align: center;
+}
+.contact .booking-qr {
+  display: inline-block;
+  line-height: 0;
+  border-radius: var(--img-radius);
+  overflow: hidden;
+}
+.contact .booking-qr img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+}
+.contact .booking-label {
+  margin: 10px 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+}
+/* tappable on mobile, but reads as a plain caption — no hover, no underline */
+.contact .booking-label a,
+.contact .booking-label a:hover,
+.contact .booking-label a:focus,
+.contact .booking-label a:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 .contact .info {
   width: 100%;
   background: #000000;
-  padding-top: 35px;
+}
+@media (min-width: 992px) {
+  .contact .info {
+    transform: translateY(calc(var(--qr-label-block) / -2));
+  }
+}
+@media (max-width: 991.98px) {
+  /* stacked: centre the details as a block, keeping icon-left / text-right */
+  .contact .info {
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .contact .info i {
   font-size: 20px;
@@ -574,31 +580,14 @@ section {
   color: #ffffff;
 }
 .contact .info .instagram,
-.contact .info .email,
-.contact .info .phone {
+.contact .info .email {
   margin-top: 40px;
 }
 .contact .info .instagram:hover i,
 .contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
+.contact .info .address:hover i {
   background: #eed48f;
   color: #000000;
-}@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /*--------------------------------------------------------------
@@ -610,7 +599,7 @@ section {
   font-size: 14px;
   text-align: center;
   align-items: center;
-  padding: 30px 0;
+  padding: calc(var(--space-section) / 2) 0;
 }
 #footer h3 {
   color: #fff;
@@ -649,16 +638,6 @@ section {
   background: #ffda74;
   color: #000000;
   text-decoration: none;
-}
-#footer .copyright {
-  margin: 0 0 5px 0;
-}
-#footer .credits {
-  font-size: 13px;
-}
-.services strong {
-  color: #feca40;
-  font-size: 16px;
 }
 /*--------------------------------------------------------------
 # Pic-Row
